@@ -8,6 +8,7 @@ public class ChainCollision : MonoBehaviour {
 
 		if (col.tag == "Ball")
 		{
+			CameraShake.shakeNow = true;
 			col.GetComponent<Ball>().Split();
 		}
 	}
